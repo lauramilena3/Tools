@@ -107,7 +107,7 @@ rule virSorter:
 	message:
 		"Classifing contigs with VirSorter"
 	conda:
-		"/viral.yaml"
+		"viral.yaml"
 	threads: 4
 	shell:
 		"""
@@ -130,7 +130,7 @@ rule virFinder:
 	message: 
 		"Scoring virus VirFinder"
 	conda:
-		"/viral.yaml"
+		"viral.yaml"
 	threads: 1
 	shell:
 		"""
