@@ -1,4 +1,4 @@
-input_dir: "data/00_RAW_DATA"
+input_dir: "data"
 results_dir: "data"
 operating_system: "linux"
 
