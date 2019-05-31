@@ -1,6 +1,13 @@
+#======================================================
+# TUTORIAL
+#======================================================
+# git clone https://github.com/lauramilena3/Tools
+# conda env create -n ViralTools -f ViralTools.yaml
+# source activate ViralTools
+# snakemake -j $nCores --use-conda --config input_dir=$fastaDir results_dir=$reusultDir
+
 import os
 import re
-#import pandas as pd
 #======================================================
 # Config files
 #======================================================
