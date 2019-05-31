@@ -4,6 +4,3 @@ results_dir: "data"
 virSorter_db: "db/VirSorter/virsorter-data"
 virSorter_dir: "tools/VirSorter"
 virFinder_dir: "tools/VirFinder"
-
-
-
