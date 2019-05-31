@@ -95,7 +95,7 @@ rule downloadViralDB:
 
 rule virSorter:
 	input:
-		representatives=INPUT_DIR + {sample}.fasta,
+		representatives=INPUT_DIR + "{sample}.fasta",
 		virSorter_dir=config['virSorter_dir'],
 		virSorter_db=config['virSorter_db']
 	output:
@@ -119,7 +119,7 @@ rule virSorter:
 
 rule virFinder:
 	input:
-		representatives=INPUT_DIR + {sample}.fasta,
+		representatives=INPUT_DIR + "{sample}.fasta",
 		virFinder_dir=config['virFinder_dir']
 	output:
 		pvalues=dirs_dict["VIRAL_DIR"] + "/{sample}_virFinder_pvalues.txt",
