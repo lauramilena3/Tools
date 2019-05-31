@@ -105,7 +105,7 @@ rule virSorter:
 	message:
 		"Classifing contigs with VirSorter"
 	conda:
-		dirs_dict["ENVS_DIR"] + "/vir.yaml"
+		"/viral.yaml"
 	threads: 4
 	shell:
 		"""
@@ -128,7 +128,7 @@ rule virFinder:
 	message: 
 		"Scoring virus VirFinder"
 	conda:
-		dirs_dict["ENVS_DIR"] + "/vir.yaml"
+		"/viral.yaml"
 	threads: 1
 	shell:
 		"""
