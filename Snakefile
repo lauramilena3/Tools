@@ -23,6 +23,7 @@ dir_list = ["VIRAL_DIR"]
 dir_names = [RESULTS_DIR + "/VIRAL_ID"]
 dirs_dict = dict(zip(dir_list, dir_names))
 SAMPLES,=glob_wildcards(INPUT_DIR + "/{sample}.fasta")
+print(INPUT_DIR)
 print(SAMPLES)
 
 
