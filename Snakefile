@@ -122,7 +122,7 @@ rule virFinder:
 		representatives=INPUT_DIR + {sample}.fasta,
 		virFinder_dir=config['virFinder_dir']
 	output:
-		pvalues=dirs_dict["VIRAL_DIR"] + "/{sample}_virFinder_pvalues.txt"
+		pvalues=dirs_dict["VIRAL_DIR"] + "/{sample}_virFinder_pvalues.txt",
 	params:
 		virFinder_script="scripts/virfinder_wrapper.R"
 	message: 
@@ -140,7 +140,7 @@ rule parseViralTable:
 		pvalues = dirs_dict["VIRAL_DIR"] + "/{sample}_virFinder_pvalues.txt",
 		categories=dirs_dict["VIRAL_DIR"] + "/{sample}_virSorter/VIRSorter_global-phage-signal.csv"
 	output:
-		table=dirs_dict["VIRAL_DIR"]+ "/{sample}_viral_table.csv" 
+		table=dirs_dict["VIRAL_DIR"]+ "/{sample}_viral_table.csv"
 	params:
 		virFinder_script="scripts/virfinder_wrapper.R'",
 		virFinder_dir=config['virFinder_dir']
